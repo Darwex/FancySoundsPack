@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "FancysoundsPack-tvOS.app"
-               BlueprintName = "FancysoundsPack-tvOS"
-               ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+               BuildableName = "FancySoundsPack-tvOS.app"
+               BlueprintName = "FancySoundsPack-tvOS"
+               ReferencedContainer = "container:FancySoundsPack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "FancysoundsPack-tvOSTests.xctest"
-               BlueprintName = "FancysoundsPack-tvOSTests"
-               ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+               BuildableName = "FancySoundsPack-tvOSTests.xctest"
+               BlueprintName = "FancySoundsPack-tvOSTests"
+               ReferencedContainer = "container:FancySoundsPack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "FancysoundsPack-tvOSTests.xctest"
-               BlueprintName = "FancysoundsPack-tvOSTests"
-               ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+               BuildableName = "FancySoundsPack-tvOSTests.xctest"
+               BlueprintName = "FancySoundsPack-tvOSTests"
+               ReferencedContainer = "container:FancySoundsPack.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "FancysoundsPack-tvOS.app"
-            BlueprintName = "FancysoundsPack-tvOS"
-            ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+            BuildableName = "FancySoundsPack-tvOS.app"
+            BlueprintName = "FancySoundsPack-tvOS"
+            ReferencedContainer = "container:FancySoundsPack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "FancysoundsPack-tvOS.app"
-            BlueprintName = "FancysoundsPack-tvOS"
-            ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+            BuildableName = "FancySoundsPack-tvOS.app"
+            BlueprintName = "FancySoundsPack-tvOS"
+            ReferencedContainer = "container:FancySoundsPack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "FancysoundsPack-tvOS.app"
-            BlueprintName = "FancysoundsPack-tvOS"
-            ReferencedContainer = "container:FancysoundsPack.xcodeproj">
+            BuildableName = "FancySoundsPack-tvOS.app"
+            BlueprintName = "FancySoundsPack-tvOS"
+            ReferencedContainer = "container:FancySoundsPack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
