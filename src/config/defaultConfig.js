@@ -1,6 +1,7 @@
 module.exports = {
-  images: {
-    zoidbergHurray: require('../../assets/images/zoidberg-horray.jpg'),
-    nelson: require('../../assets/images/nelson.png')
-  }
+  types: [{
+    image: require('../../assets/images/nelson.png'),
+    sound: require('../../assets/sound/nelson-haha.mp3'),
+    background: 'yellow'
+  }]
 }
