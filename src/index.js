@@ -10,66 +10,78 @@ import {
 import sound from 'react-native-sound'
 import config from './config/defaultConfig'
 import TouchableList from './components/TouchableList'
+import Sound from 'react-native-sound'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentType: config.types[0]
+    constructor(props) {
+        super(props)
+        this.state = {
+            currentType: config.types[0]
+        }
+
+        Sound.setCategory('Ambient', true)
+
+        this.changeTypeBound = this.changeType.bind(this)
+        this.playSoundBound = this.playSound.bind(this)
     }
 
-    sound.setCategory('Ambient')
+    changeType(newType) {
+        this.setState({
+            currentType: newType
+        })
+    }
 
-    this.changeType = this.changeType.bind(this)
-    this.playSound = this.playSound.bind(this)
-  }
+    playSound() {
+        const s = new Sound(this.state.currentType.sound, Sound.MAIN_BUNDLE, (e) => {
+            if (e) {
+                console.log('error', e)
+            } else {
+                s.setSpeed(1)
+                console.log('duration', s.getDuration())
+                s.play(() => s.release()) // Release when it's done so we're not using up resources
+            }
+        })
+    // Release the audio player resource
+        s.release()
+    }
 
-  changeType(newType) {
-    this.setState({
-      currentType: newType
-    })
-    console.log(currentType)
-  }
+    render() {
+        console.log(this.state)
 
-  playSound() {
-
-  }
-
-  render() {
-    return (
+        return (
       <View style={styles.container}>
         <Text style={styles.heading}>Tap the picture!</Text>
-        <TouchableOpacity>
+        <TouchableOpacity
+            onPress={this.playSoundBound}>
           <Image
-              onTouch={this.playSound}
               source={this.state.currentType.image}
               style={styles.image}/>
         </TouchableOpacity>
         <TouchableList
           availableTypes={config.types}
-          onTouch={this.changeType} />
+          onTouch={this.changeTypeBound} />
       </View>
-    )
-  }
+        )
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  heading: {
-    fontSize: 30,
-    marginBottom: 20
-  },
-  image: {
-    width: 320,
-    height: 200,
-    borderWidth: 5,
-    borderRadius: 20,
-    marginBottom: 20
-  }
-});
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    heading: {
+        fontSize: 30,
+        marginBottom: 20
+    },
+    image: {
+        width: 320,
+        height: 200,
+        borderWidth: 5,
+        borderRadius: 20,
+        marginBottom: 20
+    }
+})
 
 AppRegistry.registerComponent('FancySoundsPack', () => App)
