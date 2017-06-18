@@ -38,8 +38,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		DD97A8381EF464BE00E26CD4 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE98C511EEBF92F0091EAB8 /* libRNSound.a */; };
 		DDB683551EF6DC02009E7D58 /* murloc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB683521EF6DC02009E7D58 /* murloc.mp3 */; };
-		DDB683561EF6DC02009E7D58 /* nelson_haha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB683531EF6DC02009E7D58 /* nelson_haha.mp3 */; };
 		DDB683571EF6DC02009E7D58 /* whoopwhoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = DDB683541EF6DC02009E7D58 /* whoopwhoop.wav */; };
+		DDB683591EF6E693009E7D58 /* nelson_haha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB683581EF6E693009E7D58 /* nelson_haha.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,8 +268,8 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		DDB683521EF6DC02009E7D58 /* murloc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = murloc.mp3; path = ../assets/sound/murloc.mp3; sourceTree = "<group>"; };
-		DDB683531EF6DC02009E7D58 /* nelson_haha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nelson_haha.mp3; path = ../assets/sound/nelson_haha.mp3; sourceTree = "<group>"; };
 		DDB683541EF6DC02009E7D58 /* whoopwhoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = whoopwhoop.wav; path = ../assets/sound/whoopwhoop.wav; sourceTree = "<group>"; };
+		DDB683581EF6E693009E7D58 /* nelson_haha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nelson_haha.mp3; path = ../assets/sound/nelson_haha.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,8 +405,8 @@
 		13B07FAE1A68108700A75B9A /* FancySoundsPack */ = {
 			isa = PBXGroup;
 			children = (
+				DDB683581EF6E693009E7D58 /* nelson_haha.mp3 */,
 				DDB683521EF6DC02009E7D58 /* murloc.mp3 */,
-				DDB683531EF6DC02009E7D58 /* nelson_haha.mp3 */,
 				DDB683541EF6DC02009E7D58 /* whoopwhoop.wav */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -882,8 +882,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB683591EF6E693009E7D58 /* nelson_haha.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				DDB683561EF6DC02009E7D58 /* nelson_haha.mp3 in Resources */,
 				DDB683571EF6DC02009E7D58 /* whoopwhoop.wav in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				DDB683551EF6DC02009E7D58 /* murloc.mp3 in Resources */,
