@@ -37,6 +37,7 @@ class App extends Component {
                 // Die silently
             } else {
                 s.setSpeed(1)
+-                s.play(() => s.release())
             }
         })
     }
@@ -54,7 +55,7 @@ class App extends Component {
         </TouchableOpacity>
         <TouchableList
           availableTypes={config.types}
-          onTouch={this.changeTypeBound} />
+          changeType={this.changeTypeBound} />
       </View>
         )
     }

@@ -12,18 +12,21 @@ export default class TouchableList extends Component {
     }
 
     render() {
-        const listItems = (<View>
-      {this.props.availableTypes.map( (item, key) => {
-          return (
-            <TouchableOpacity style={styles.container} key={key}>
-              <Image
-                source={item.image}
-                style={styles.image}
-                onTouch={this.props.onTouch.bind(null, item)} />
-            </TouchableOpacity>
-          )
-      })}
-    </View>)
+        const listItems = (
+          <View style={styles.container} >
+            {this.props.availableTypes.map((item, key) => {
+                return (
+                  <TouchableOpacity
+                    style={styles.listItem}
+                    key={key}
+                    onPress={this.props.changeType.bind(null, item)}>
+                      <Image
+                        source={item.image}
+                        style={styles.image} />
+                  </TouchableOpacity>
+                )
+            })}
+          </View>)
 
         return (
             <View>
@@ -37,7 +40,11 @@ const styles = StyleSheet.create({
     container: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        flexDirection:'row',
+        flexWrap: 'wrap'
+    },
+    listItem: {
+        marginRight: 10
     },
     image: {
         width: 80,
