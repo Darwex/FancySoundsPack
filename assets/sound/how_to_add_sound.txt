@@ -1,0 +1,2 @@
+# How to add sound
+To add sound add it to x-code project for iOS and to /android/app/src/main/res/raw for Android

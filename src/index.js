@@ -7,7 +7,7 @@ import {
   Image,
   Text
 } from 'react-native'
-import sound from 'react-native-sound'
+
 import config from './config/defaultConfig'
 import TouchableList from './components/TouchableList'
 import Sound from 'react-native-sound'
@@ -34,19 +34,14 @@ class App extends Component {
     playSound() {
         const s = new Sound(this.state.currentType.sound, Sound.MAIN_BUNDLE, (e) => {
             if (e) {
-                console.log('error', e)
+                // Die silently
             } else {
                 s.setSpeed(1)
-                console.log('duration', s.getDuration())
-                s.play(() => s.release()) // Release when it's done so we're not using up resources
             }
         })
-    // Release the audio player resource
-        s.release()
     }
 
     render() {
-        console.log(this.state)
 
         return (
       <View style={styles.container}>
@@ -55,7 +50,7 @@ class App extends Component {
             onPress={this.playSoundBound}>
           <Image
               source={this.state.currentType.image}
-              style={styles.image}/>
+              style={styles.image} />
         </TouchableOpacity>
         <TouchableList
           availableTypes={config.types}
@@ -80,7 +75,8 @@ const styles = StyleSheet.create({
         height: 200,
         borderWidth: 5,
         borderRadius: 20,
-        marginBottom: 20
+        marginBottom: 20,
+        borderColor: 'black'
     }
 })
 
